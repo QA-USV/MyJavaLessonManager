@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 public class AfficheManagerTest {
 
+    AfficheManager manager = new AfficheManager();
+
 //    @Test
 //    public void shouldAddNewMovie() {
 //
@@ -51,7 +53,7 @@ public class AfficheManagerTest {
     @Test
     public void shouldFindLastMoviesExactArray() {
 
-        AfficheManager manager = new AfficheManager();
+        AfficheManager manager = new AfficheManager(10);
 
         manager.addNewMovie("movie-01");
         manager.addNewMovie("movie-02");
