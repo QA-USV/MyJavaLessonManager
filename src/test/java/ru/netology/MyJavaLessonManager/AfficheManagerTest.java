@@ -1,12 +1,10 @@
 package ru.netology.MyJavaLessonManager;
 
-import jdk.management.jfr.FlightRecorderMXBean;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class AfficheManagerTest {
 
-    AfficheManager manager = new AfficheManager();
 
 //    @Test
 //    public void shouldAddNewMovie() {
@@ -72,7 +70,6 @@ public class AfficheManagerTest {
 
     @Test
     public void shouldFindLastMoviesWhenZero() {
-
 
         AfficheManager manager = new AfficheManager(0);
 
