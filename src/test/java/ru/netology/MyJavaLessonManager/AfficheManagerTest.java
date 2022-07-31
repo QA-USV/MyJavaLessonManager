@@ -11,7 +11,10 @@ public class AfficheManagerTest {
 //
 //        AfficheManager manager = new AfficheManager();
 //
-//        String[] movies = { "movie-01", "movie-02", "movie-03", "movie-04" };
+//        manager.addNewMovie("movie-01");
+//        manager.addNewMovie("movie-02");
+//        manager.addNewMovie("movie-03");
+//        manager.addNewMovie("movie-04");
 //        manager.addNewMovie("movie-05");
 //        manager.addNewMovie("movie-06");
 //
@@ -48,7 +51,7 @@ public class AfficheManagerTest {
     @Test
     public void shouldFindLastMoviesExactArray() {
 
-        AfficheManager manager = new AfficheManager(10);
+        AfficheManager manager = new AfficheManager();
 
         manager.addNewMovie("movie-01");
         manager.addNewMovie("movie-02");
@@ -68,9 +71,8 @@ public class AfficheManagerTest {
     @Test
     public void shouldFindLastMoviesWhenZero() {
 
-        AfficheManager manager = new AfficheManager(0);
 
-        String[] movies = {"movie-01", "movie-02", "movie-03", "movie-04", "movie-05"};
+        AfficheManager manager = new AfficheManager(0);
 
         String[] expected = {};
         String[] actual = manager.findLastMovies();
